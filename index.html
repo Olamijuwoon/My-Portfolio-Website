@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Huawei Payment Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #ff0033;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        button {
+            background-color: #ff0033;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e5a5a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">Huawei</div>
+        <h1>Payment Portal</h1>
+    </div>
+    <div class="main-content">
+        <p>Welcome to the Huawei Payment Portal. Here, you can make payments for data subscriptions and airtime. Simply choose your desired payment option below:</p>
+        <button id="data-subscription">Data Subscription Payment</button>
+        <button id="airtime-payment">Airtime Payment</button>
+    </div>
+
+    <script>
+        // JavaScript code to handle button clicks and show popups
+        const dataSubscriptionButton = document.getElementById('data-subscription');
+        const airtimePaymentButton = document.getElementById('airtime-payment');
+
+        dataSubscriptionButton.addEventListener('click', function() {
+            alert('You have successfully purchased data.');
+        });
+
+        airtimePaymentButton.addEventListener('click', function() {
+            alert('You have successfully purchased airtime.');
+        });
+    </script>
+</body>
+</html>
